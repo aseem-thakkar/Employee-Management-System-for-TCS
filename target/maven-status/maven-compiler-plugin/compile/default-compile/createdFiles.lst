@@ -1,0 +1,7 @@
+com\demo\spring\HomeController.class
+com\demo\spring\dao\PhoneDAOImpl.class
+com\demo\spring\PhoneController.class
+com\demo\spring\dao\PhoneDAO.class
+com\demo\spring\service\PhoneService.class
+com\demo\spring\model\Phone.class
+com\demo\spring\service\PhoneServiceImpl.class
