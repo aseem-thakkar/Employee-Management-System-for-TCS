@@ -1,0 +1,36 @@
+Hi Assem,
+
+Thanks for sharing the code.
+
+Can you also send the DB creation scripts and steps to create the database so that i can setup the same in my local.
+
+I was running the application and attached error:
+
+19-Jul-2017 12:10:58.926 SEVERE [localhost-startStop-1] org.postgresql.Driver.connect Connection error:
+ org.postgresql.util.PSQLException: The connection attempt failed.
+        at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:275)
+        at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+        at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+        at org.postgresql.Driver.makeConnection(Driver.java:450)
+        at org.postgresql.Driver.connect(Driver.java:252)
+        at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+        at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+        at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+        at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+        at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+        at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+        at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+        at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279)
+        at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124)
+        at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+        at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+        at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+        at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885)
+        at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843)
+        at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+        at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+        at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+        at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+        at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687
+
+Thanks.
